@@ -1,4 +1,4 @@
-# VL53L1X library for Arduino
+# VL53L1X library for Arduino, ported as a Particle Library
 
 Version: 1.0.1<br>
 Release date: 2018-09-19<br>
@@ -149,7 +149,7 @@ This library is intended to provide a quicker and easier way to get started usin
 
 * `static const char * rangeStatusToString(RangeStatus status)`<br>
   Converts a `RangeStatus` into a readable string describing that status.
-  
+
   Note that on an AVR, the strings in this function are stored in RAM (dynamic memory), which makes working with them easier but uses up 200+ bytes of RAM (many AVR-based Arduinos only have about 2000 bytes of RAM). You can avoid this memory usage if you do not call this function in your sketch.
 
 * `void setTimeout(uint16_t timeout)`<br>
